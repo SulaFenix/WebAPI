@@ -4483,21 +4483,6 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Alura.WebAPI.DAL.Livros/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "Alura.WebAPI.Model": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "2.1.0",
-          "Microsoft.EntityFrameworkCore.Relational": "2.1.0"
-        },
-        "compile": {
-          "bin/placeholder/Alura.WebAPI.DAL.Livros.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Alura.WebAPI.DAL.Livros.dll": {}
-        }
-      },
       "Alura.WebAPI.DAL.Usuarios/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -12157,11 +12142,6 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "Alura.WebAPI.DAL.Livros/1.0.0": {
-      "type": "project",
-      "path": "../Alura.WebAPI.DAL.Livros/Alura.WebAPI.DAL.Livros.csproj",
-      "msbuildProject": "../Alura.WebAPI.DAL.Livros/Alura.WebAPI.DAL.Livros.csproj"
-    },
     "Alura.WebAPI.DAL.Usuarios/1.0.0": {
       "type": "project",
       "path": "../Alura.WebAPI.DAL.Usuarios/Alura.WebAPI.DAL.Usuarios.csproj",
@@ -12180,7 +12160,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Alura.WebAPI.DAL.Livros >= 1.0.0",
       "Alura.WebAPI.DAL.Usuarios >= 1.0.0",
       "Alura.WebAPI.Model >= 1.0.0",
       "Alura.WebAPI.Seguranca >= 1.0.0",
@@ -12222,9 +12201,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\sulaf\\Documents\\Projetos\\Alura\\Alura.WebAPI\\Alura.WebAPI.DAL.Livros\\Alura.WebAPI.DAL.Livros.csproj": {
-              "projectPath": "C:\\Users\\sulaf\\Documents\\Projetos\\Alura\\Alura.WebAPI\\Alura.WebAPI.DAL.Livros\\Alura.WebAPI.DAL.Livros.csproj"
-            },
             "C:\\Users\\sulaf\\Documents\\Projetos\\Alura\\Alura.WebAPI\\Alura.WebAPI.DAL.Usuarios\\Alura.WebAPI.DAL.Usuarios.csproj": {
               "projectPath": "C:\\Users\\sulaf\\Documents\\Projetos\\Alura\\Alura.WebAPI\\Alura.WebAPI.DAL.Usuarios\\Alura.WebAPI.DAL.Usuarios.csproj"
             },
