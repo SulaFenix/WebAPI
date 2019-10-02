@@ -2,6 +2,7 @@
 using Alura.ListaLeitura.Persistencia;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Linq;
 
 namespace Alura.ListaLeitura.Api.Controllers
@@ -9,7 +10,8 @@ namespace Alura.ListaLeitura.Api.Controllers
     [Authorize]
     [ApiController]
     [ApiVersion("1.0")]
-    [Route("api/[controller]")]
+    [ApiExplorerSettings(GroupName = "v1")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class LivrosController : ControllerBase
     {
         private readonly IRepository<Livro> _repo;
@@ -37,6 +39,7 @@ namespace Alura.ListaLeitura.Api.Controllers
         }
 
         [HttpPost]
+        [SwaggerOperation(Summary = "Registra novo livro na base.")]
         public IActionResult Incluir([FromForm] LivroUpload model)
         {
             if (ModelState.IsValid)

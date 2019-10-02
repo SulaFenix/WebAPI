@@ -30,7 +30,7 @@ namespace Alura.ListaLeitura.WebApp
 
             services.AddHttpClient<LivroApiClient>(client =>
             {
-                client.BaseAddress = new Uri("http://localhost:6000/api/");
+                client.BaseAddress = new Uri("http://localhost:6000/api/v1.0/");
             });
 
             services.AddHttpClient<AuthApiClient>(client =>
